@@ -52,7 +52,7 @@ scan:
 doc: doc-refresh doc-web
 
 doc-refresh:
-	sphinx-apidoc -f -P -o $(doc_source)/source/ $(namespace)
+	sphinx-apidoc --implicit-namespaces -f  -o $(doc_source)/source/ $(namespace)
 
 doc-web:
 	sphinx-build -M html $(doc_source)/source/ $(doc_source)/dist

@@ -5,7 +5,7 @@ from abc import abstractmethod, ABC
 
 
 class Serializer(ABC):
-    """ Abstract  interface which defines Serializer operations.
+    """ Abstract interface which defines Serializer operations.
     """
     @abstractmethod
     def encode(self, data, **kwargs)-> Any:

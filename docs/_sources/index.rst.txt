@@ -6,15 +6,29 @@
 Welcome to Betacore Kafka Schema's documentation!
 =================================================
 
-.. toctree::
+
+betacore.kafka.schema.avro
+------------------------------------------
+
+.. automodule:: betacore.kafka.schema.avro
+    :members:
+    :undoc-members:
+    :show-inheritance:
+betacore.kafka.schema.registry
+------------------------------------------
+.. automodule:: betacore.kafka.schema.registry
+    :members:
+    :undoc-members:
+    :show-inheritance:
+betacore.kafka.schema.serializer
+------------------------------------------
+.. automodule:: betacore.kafka.schema.serializer
+    :members:
+    :undoc-members:
+    :show-inheritance:
+.. toctree::        
    :maxdepth: 2
-   :caption: Contents:
-
-
 
 Indices and tables
 ==================
-
-* :ref:`genindex`
 * :ref:`modindex`
-* :ref:`search`

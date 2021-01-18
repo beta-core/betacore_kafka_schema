@@ -12,12 +12,20 @@ class AvroSchema(Serializer):
 
     def encode(self, data: dict, **kwargs) -> Optional[bytes]:
         """ Encode the data into an avro byte stream
+            
             :param data dict: information to be encoded into avro byte stream
+   
+            :param schema: schema to use in decode algorithm
+            :type schema: Optional[dict]
 
-            :param bool schemaless: encode without schmea defaults to true
+            :param schemaless: encode without schmea defaults to true
+            :type schemaless: Optional[dict]
+
             :return: bytes so long as data is not None
             :rtype: Optional[bytes]
-            :rases: fastavro.schema.SchemaParseException verify scheam is correct
+
+            :raises AttributeError: schema must be provide with this implementation
+            :rases fastavro.schema.SchemaParseException: incorrect schema provided, please verify the scheam is correct
         """
         if not data:
             return None
@@ -36,7 +44,13 @@ class AvroSchema(Serializer):
 
     def decode(self, data: Union[str, bytes], **kwargs) -> Optional[dict]:
         """ Decode the data into plane text
+            
+            :param data: data which needs to be decoded. both bytes and UTF-8 string allow
+            :type data: Union[str, bytes]
+            :param schema: schema to use in decode algorithm
+            :type schema: Optional[dict]
 
+            :raises AttributeError: schema must be provide with this implementation
         """
         if not data:
             return None
