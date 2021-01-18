@@ -7,3 +7,4 @@ sphinx-theme
 pytest-cov
 fastapi
 uvicorn
+sphinx
