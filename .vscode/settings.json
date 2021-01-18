@@ -1,0 +1,19 @@
+{
+    "cSpell.words": [
+        "Betacore",
+        "fastavro",
+        "struct",
+        "uvicorn"
+    ],
+    "python.pythonPath": "/srv/git/kafka-schema/.venv/bin/python3",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./test",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": true
+}

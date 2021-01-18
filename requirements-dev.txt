@@ -1,0 +1,9 @@
+pylint
+rope
+bandit
+setuptools
+wheel
+sphinx-theme
+pytest-cov
+fastapi
+uvicorn
